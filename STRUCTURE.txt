@@ -1,0 +1,50 @@
+/**
+ * EarlyCart Sold Plugin Structure
+ *
+ * Version: 1.0.0
+ * Requires at least: 6.8
+ * Author: Drago Katić
+ *
+ * Overview of the plugin's directory layout and the purpose of each component.
+ *
+ * earlycart-sold/                     # Root directory of the plugin
+ *
+ * ├── admin/                          # Admin-only code (backend UI)
+ * │   └── admin-page.php              # Settings page to configure target category and multiplier
+ *
+ * ├── assets/                         # Static frontend resources
+ * │   ├── css/
+ * │   │   └── style.css               # Frontend stylesheet (bestseller badge, units sold, etc.)
+ * │   ├── images/
+ * │   │   └── screenshots/
+ * │   │       ├── screenshot-1.png    # Screenshot for WordPress plugin repository
+ * │   │       └── screenshot-2.png    # Additional screenshot for documentation or showcase
+ * │   ├── js/
+ * │   │   └── script.js               # JavaScript for dynamic frontend behavior (if any)
+ * │   ├── banner-1544x500.png         # Plugin banner (large format for WordPress.org page)
+ * │   └── banner-772x250.png          # Plugin banner (standard size)
+ *
+ * ├── includes/                       # Core plugin logic and lifecycle management
+ * │   ├── assets-loader.php           # Enqueues plugin CSS and JS on the frontend
+ * │   ├── db-handler.php              # Database read/write helpers (retrieving settings, etc.)
+ * │   ├── install.php                 # Tasks on plugin activation (e.g. DB table creation)
+ * │   └── uninstall.php               # Cleanup on plugin deletion (e.g. remove DB table)
+ *
+ * ├── languages/                      # Localization files for plugin translation
+ * │   ├── earlycart-sold.pot          # Master template for translators (Portable Object Template)
+ * │   ├── earlycart-sold-sr_RS.po     # Serbian translation (editable text format)
+ * │   └── earlycart-sold-sr_RS.mo     # Serbian translation (compiled machine-readable format)
+ *
+ * ├── templates/                      # Display templates used on frontend (WooCommerce hooks)
+ * │   ├── admin-form.php              # Admin form to select product category and multiplier
+ * │   ├── bestseller.php              # Outputs "BESTSELLER" label for products in selected category
+ * │   ├── new-arrival.php             # Outputs "New arrival" label and calculated units sold (outside target category)
+ * │   └── quantity.php                # Outputs dynamically calculated (and styled) units sold
+ *
+ * ├── earlycart-sold.php              # Main plugin file (header, hooks, logic, includes, render functions)
+ * ├── earlycart-sold.png              # Icon shown in the WordPress plugins list
+ * ├── license.txt                     # License file (GPLv2 or later)
+ * ├── README.md                       # GitHub-friendly documentation in Markdown
+ * ├── readme.txt                      # WordPress.org-compatible plugin readme file
+ * └── STRUCTURE.txt                   # Technical overview of plugin directory and files (this file)
+ */
