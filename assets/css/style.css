@@ -1,1 +1,118 @@
+/* Shared styles for labels (Bestseller / New Product) */
+.ecs-badge,
+.ecs-label {
+  background-color: #ff911c; /* label background */
+  color: #0d1321;           /* text color */
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 8px;         /* spacing divisible by 4 */
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.ecs-label {
+  background-color: transparent; /* label background */
+}
 
+/* Units sold text */
+.ecs-units {
+  font-size: 14px;
+  color: #0d1321;           /* unified text color */
+  margin-left: auto;        /* align right in flex container */
+}
+
+/* Single product page */
+.ecs-single-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.ecs-single-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0d1321;
+  margin-bottom: 8px;
+}
+
+/* Shop (product archive) page */
+.ecs-shop-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px dashed transparent;
+  margin-bottom: 16px;
+}
+
+.ecs-shop-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0d1321;
+  margin: 8px 0;
+}
+
+/* Wrapper for label + units in shop */
+.ecs-simple-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Admin form styles */
+.earlycart-form {
+  background-color: #fdfdfd;
+  padding: 32px;
+  border: 1px solid #ccd0d4;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.earlycart-section {
+  margin-bottom: 24px;
+}
+
+.earlycart-label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0d1321;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.earlycart-radio-option {
+  margin-right: 16px;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.earlycart-radio-option input[type="radio"] {
+  margin-right: 4px;
+}
+
+.earlycart-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.earlycart-description {
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+  color: #555555;
+  display: block;
+}
+
+.earlycart-submit-wrap {
+  margin-top: 32px;
+}
